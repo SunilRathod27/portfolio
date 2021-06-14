@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: micropython-libc
+Version: 0.3.1
+Summary: MicroPython FFI helper module (deprecated)
+Home-page: https://github.com/micropython/micropython-lib
+Author: MicroPython Developers
+Author-email: micro-python@googlegroups.com
+License: MIT
+Description: MicroPython FFI helper module (deprecated, replaced by micropython-ffilib).
+Platform: UNKNOWN

@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: pycopy-ffilib
+Version: 0.2.1
+Summary: Pycopy FFI helper module
+Home-page: https://github.com/pfalcon/pycopy-lib
+Author: Damien George, Paul Sokolovsky
+Author-email: pycopy-dev@googlegroups.com
+Maintainer: Paul Sokolovsky
+Maintainer-email: pycopy-dev@googlegroups.com
+License: MIT
+Description: Pycopy FFI helper module to easily interface with underlying shared libraries.
+Platform: UNKNOWN

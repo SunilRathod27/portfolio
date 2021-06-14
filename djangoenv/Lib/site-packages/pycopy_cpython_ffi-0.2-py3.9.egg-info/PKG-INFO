@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: pycopy-cpython-ffi
+Version: 0.2
+Summary: Pycopy module ffi ported to CPython
+Home-page: https://github.com/pfalcon/pycopy-lib
+Author: Paul Sokolovsky
+Author-email: pycopy-dev@googlegroups.com
+Maintainer: Paul Sokolovsky
+Maintainer-email: pycopy-dev@googlegroups.com
+License: MIT
+Description: This is a compatibility module for the standard library of Pycopy project
+        (https://github.com/pfalcon/pycopy). It allows applications using
+        Pycopy APIs to run on CPython.
+        
+Platform: UNKNOWN
