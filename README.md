@@ -1,5 +1,5 @@
 # Personal Web Portfolio
-![Homepage](https://github.com/SunilRathod27/sunilportfolio/blob/main/static/assets/images/PortfolioHomePage.png)
+![Homepage](https://github.com/SunilRathod27/portfolio/blob/main/static/assets/images/PortfolioHomePage.png)
 
 ## Built with
 * [Django 2.2.2](https://www.djangoproject.com/)
