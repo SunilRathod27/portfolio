@@ -418,7 +418,7 @@ section{padding:7rem 2.5rem;max-width:1100px;margin:0 auto;position:relative}
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-ghost">Contact Me</a>
-        <a href="Sunil_Rathod_Resume_2026_v2.docx" download class="btn btn-ghost">Resume</a>
+        <a href="Sunil_Rathod_Resume_2026.pdf" download class="btn btn-ghost">Resume</a>
       </div>
     </div>
     <div class="hero-photo">
@@ -616,11 +616,12 @@ section{padding:7rem 2.5rem;max-width:1100px;margin:0 auto;position:relative}
     </div>
     <div class="contact-form glass rv d2">
       <h3>Send a message</h3>
-      <form onsubmit="event.preventDefault();">
-        <div class="fg"><label>Name</label><input type="text" placeholder="Your name"></div>
-        <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com"></div>
-        <div class="fg"><label>Message</label><textarea placeholder="What's on your mind?"></textarea></div>
-        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send Message</button>
+      <form id="contactForm" onsubmit="handleContactForm(event)">
+        <div class="fg"><label>Name</label><input type="text" id="cf-name" placeholder="Your name" required></div>
+        <div class="fg"><label>Email</label><input type="email" id="cf-email" placeholder="your@email.com" required></div>
+        <div class="fg"><label>Message</label><textarea id="cf-message" placeholder="What's on your mind?" required></textarea></div>
+        <button type="submit" id="cf-btn" class="btn btn-primary" style="width:100%;justify-content:center">Send Message</button>
+        <p id="cf-status" style="margin-top:1rem;font-size:.85rem;text-align:center;display:none"></p>
       </form>
     </div>
   </div>
@@ -805,6 +806,31 @@ if(window.gsap){
 }
 
 })();
+
+async function handleContactForm(e){
+  e.preventDefault();
+  const btn=document.getElementById('cf-btn');
+  const status=document.getElementById('cf-status');
+  const name=document.getElementById('cf-name').value.trim();
+  const email=document.getElementById('cf-email').value.trim();
+  const message=document.getElementById('cf-message').value.trim();
+  if(!name||!email||!message)return;
+  btn.disabled=true;btn.textContent='Sending...';
+  status.style.display='none';
+  try{
+    const res=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,message})});
+    const data=await res.json();
+    status.style.display='block';
+    if(data.success){
+      status.style.color='var(--cyan)';status.textContent='Message sent successfully!';
+      document.getElementById('contactForm').reset();
+    }else{
+      status.style.color='var(--pink)';status.textContent=data.error||'Failed to send. Try again.';
+    }
+  }catch{
+    status.style.display='block';status.style.color='var(--pink)';status.textContent='Network error. Please try again.';
+  }finally{btn.disabled=false;btn.textContent='Send Message';}
+}
 </script>
 </body>
 </html>
