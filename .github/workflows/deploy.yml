@@ -16,3 +16,19 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy . --project-name sunilrathod
+
+      - name: Ping Google
+        run: curl -s "https://www.google.com/ping?sitemap=https://sunilrathod.pages.dev/sitemap.xml"
+
+      - name: Ping Bing
+        run: curl -s "https://www.bing.com/ping?sitemap=https://sunilrathod.pages.dev/sitemap.xml"
+
+      - name: Ping IndexNow (Bing, Yandex, Naver, DuckDuckGo)
+        run: |
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "host": "sunilrathod.pages.dev",
+              "key": "${{ secrets.INDEXNOW_KEY }}",
+              "urlList": ["https://sunilrathod.pages.dev/"]
+            }'
