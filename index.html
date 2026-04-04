@@ -858,7 +858,7 @@ async function handleContactForm(e){
   btn.disabled=true;btn.textContent='Sending...';
   status.style.display='none';
   try{
-    const res=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,message})});
+    const res=await fetch('https://portfolio-email.shrathod515.workers.dev',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,email,message})});
     const data=await res.json();
     status.style.display='block';
     if(data.success){

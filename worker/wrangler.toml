@@ -1,0 +1,7 @@
+name = "portfolio-email"
+main = "index.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+GMAIL_USER = "shrathod515@gmail.com"
