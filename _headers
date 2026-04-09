@@ -3,6 +3,8 @@
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://portfolio-email.shrathod515.workers.dev; frame-ancestors 'none'
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
 /*.jpg
   Cache-Control: public, max-age=31536000, immutable
@@ -14,4 +16,7 @@
   Cache-Control: public, max-age=86400
 
 /robots.txt
+  Cache-Control: public, max-age=86400
+
+/llms.txt
   Cache-Control: public, max-age=86400

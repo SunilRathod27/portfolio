@@ -1,0 +1,41 @@
+# Sunil Rathod — Full Stack Developer
+
+> Sunil Rathod is a Full Stack Developer based in Ahmedabad, India, with over four years of experience building real-time industrial and enterprise web applications. His core technology stack includes Vue.js, Nuxt 3, and Node.js, with deep expertise in IoT systems, QAD ERP integrations, cold chain monitoring, and scalable cloud platforms on AWS. Sunil has completed the Gen AI Accelerator Program and actively applies LLMs, AI agents, and prompt engineering to accelerate software delivery by up to 40%. He has built production systems for companies including Collage (Digital Asset Management), Rivulet IQ, Aliter Business Solutions, and delivered IoT dashboards for PharmEasy and industrial manufacturers. Sunil holds a Bachelor of Computer Applications from Gujarat University and certifications from Google, IBM, and HackerRank.
+
+## Links
+
+- Website: https://sunilrathod.pages.dev/
+- LinkedIn: https://www.linkedin.com/in/sunilrathod27
+- GitHub: https://github.com/sunilrathod27
+- Email: shrathod515@gmail.com
+
+## Skills
+
+- Frontend: Vue.js 3, Nuxt 2 & 3, Vuetify, Pinia, TypeScript, Tailwind CSS, Chart.js
+- Backend: Node.js, Express.js, REST APIs, WebSockets, MQTT, Python
+- Database: MySQL, PostgreSQL, MongoDB, Typesense
+- Cloud & DevOps: AWS (EC2, S3, CloudFront), Docker, PM2, GitLab CI/CD
+- Gen AI & LLMs: OpenAI API, Prompt Engineering, AI Agents, RAG, LLM Integration
+- IoT: MQTT Protocol, WebSockets, Real-Time Dashboards, Industrial Monitoring
+
+## Experience
+
+- Product Developer at Collage (Apr 2024–Present): Enterprise DAM platform with AWS S3, Typesense search, brand portals
+- Vue.js Developer at Rivulet IQ (Dec 2024–Present): Scalable front-end architectures with Vue.js 3 and AWS
+- Senior Developer at Aliter Business Solutions (Jun 2022–May 2024): QAD ERP integrations, IoT dashboards for manufacturing and pharma cold chain
+- Python Developer at Techmicra IT Solutions (Aug 2020–Apr 2021): Automation scripts and data processing
+
+## Projects
+
+- Collage DAM: Enterprise digital asset management with Vue.js, Node.js, AWS S3, Typesense
+- Evolve Automation v3: QAD ERP integration platform with Nuxt 3 and REST APIs
+- MT Auto Craft IoT v3: Real-time machine tracking with MQTT, WebSockets, and QAD ERP sync
+- PharmEasy IoT Dashboard: Cold chain compliance monitoring with multi-channel alerting
+
+## Certifications
+
+- Gen AI Accelerator Program (Outskill, 2025)
+- The Fundamentals of Digital Marketing (Google)
+- Machine Learning with Python Level 1 (IBM)
+- Python 101 for Data Science (IBM)
+- Python Basic (HackerRank)
